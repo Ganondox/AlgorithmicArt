@@ -15,9 +15,10 @@ public class Greycoil {
         BufferedImage img = new BufferedImage(16, 16, BufferedImage.TYPE_INT_RGB);
         for(int i = 0; i < 16; i++ ){
             for(int k = 0; k < 16; k++) {
-                int red = MagAlgv1.N2toN1(k,i,16, 1);
-                int green =  MagAlgv1.N2toN1(k,i,16, 1);
-                int blue =  MagAlgv1.N2toN1(k,i,16, 1);
+                int intensity = MagAlgv1.N2toN1(k,i,4, MagAlgv1.block2D.red);
+                int red = intensity;
+                int green =  intensity;
+                int blue =  intensity;
 
                 int rbg = (red * 65536) + (green * 256) + blue;
                 img.setRGB(k, i, rbg);
