@@ -17,7 +17,7 @@ public class Spectralcoil {
             for(int j = 0; j < 256; j++){
                 for(int k = 0; k < 256; k++){
 
-                    int index  = MagAlgv1.N3toN1(i,j,k, 8, MagAlgv1.block3D.red);
+                    int index  = MagAlgv1.N3toN1(i,j,k, 8, MagAlgv1.block3D.grey);
                     r_coil[index] = i;
                     g_coil[index] = j;
                     b_coil[index] = k;
