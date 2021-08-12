@@ -497,7 +497,7 @@ public class MagAlgv1 {
                             if (magnitude == 1) {
                                 return sum;
                             } else {
-                                sum += MagAlgv1.N3toN1(x - scale1d, y, z, magnitude - 1, block3D.brown);
+                                sum += MagAlgv1.N3toN1(x - scale1d, y, z, magnitude - 1, block3D.red);
                                 return sum;
                             }
                         } else {
